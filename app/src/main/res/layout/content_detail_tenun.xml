@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:id="@+id/content_detail_tenun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        tools:context="com.lpdp.del.tenunapp.function.detail.DetailTenunActivity"
+        tools:showIn="@layout/activity_detail_tenun">
+
+        <ImageView
+            android:id="@+id/thumbTenun"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:transitionName="thumb" />
+
+        <TextView
+            android:id="@+id/titleTenun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/historyTenun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/descTenun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/functionTenun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/originTenun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textMotif"
+            android:layout_width="match_parent"
+            android:text="Klik motif dibawah untuk membuat variasi baru"
+            android:fontFamily="@string/app_name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewulos_id"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/browseMotifCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp"
+            >
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:id="@+id/search_view_motif"
+                android:background="@drawable/background_search_view"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:autofillHints="@string/search_hint"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_search_view"
+                >
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:id="@+id/spinner_filter"
+                    android:entries="@array/filter_motif_nusantara"
+                    android:autofillHints="@string/filter"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_list_motif" />
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

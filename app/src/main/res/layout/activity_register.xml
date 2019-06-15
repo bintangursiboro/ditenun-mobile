@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".function.activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/nameReg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:padding="7dp"
+            android:background="@color/birupudar"
+            android:ems="10"
+            android:hint="Nama Lengkap"
+            android:inputType="textPersonName"
+            android:scaleType="fitCenter" />
+
+        <EditText
+            android:id="@+id/emailReg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:background="@color/birupudar"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:scaleType="fitCenter" />
+
+        <EditText
+            android:id="@+id/passwordReg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:background="@color/birupudar"
+            android:scaleType="fitCenter"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/phoneReg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:background="@color/birupudar"
+            android:ems="10"
+            android:hint="Nomor HP"
+            android:inputType="text"
+            android:scaleType="fitCenter" />
+
+        <Spinner
+            android:id="@+id/tenun_spinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@color/birupudar"
+            android:ems="10"
+            android:prompt="@array/jenis_tenun"/>
+
+        <EditText
+            android:id="@+id/addressReg"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:background="@color/birupudar"
+            android:ems="10"
+            android:hint="Alamat lengkap"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="7dp"
+            android:background="@color/biru"
+            android:scaleType="fitCenter"
+            android:ems="10"
+            android:textSize="18dp"
+            android:textColor="@color/putih"
+            android:text="Daftar"/>
+    </LinearLayout>
+
+</ScrollView>

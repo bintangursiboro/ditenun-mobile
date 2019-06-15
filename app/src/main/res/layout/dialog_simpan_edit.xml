@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="54dp"
+    android:layout_marginRight="54dp"
+    android:layout_marginBottom="406dp"
+    android:layout_marginTop="268dp"
+    android:layout_gravity="center"
+    android:background="@drawable/rectangle_shape_dialog"
+    android:id="@+id/root"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/rectangle_shape_dialog"
+        android:paddingBottom="18dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewClose"
+                android:background="@drawable/ic_close_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/simpan_perubahan"
+            android:gravity="center"
+            android:textSize="19dp"
+            />
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonTidak"
+                android:text="@string/tidak"
+                android:textColor="@color/putih"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/rectangle_tidak_button"
+                />
+
+            <Button
+                android:id="@+id/buttonSimpanBaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_shape"
+                android:text="@string/simpanBaru"
+                android:textColor="@color/putih"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSimpan"
+                android:text="@string/simpan"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/putih"
+                android:background="@drawable/rectangle_shape"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

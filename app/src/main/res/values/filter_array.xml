@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_array">
+        <item>@string/filter_settings_region1</item>
+        <item>@string/filter_settings_region2</item>
+        <item>@string/filter_settings_region3</item>
+        <item>@string/filter_settings_region4</item>
+        <item>@string/filter_settings_region5</item>
+        <item>@string/filter_settings_region6</item>
+    </string-array>
+</resources>

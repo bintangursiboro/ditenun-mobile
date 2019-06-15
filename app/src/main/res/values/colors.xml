@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01A6FF</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorPrimaryLight">#dee3e6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+
+    <color name="colorButton">#48525E</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="color_button_selected">#796a62</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorIcon">#FFFFFF</color>
+    <color name="colorAccent">#4859b9</color>
+    <color name="colorAccentCheckBox">#FFFFFF</color>
+    <color name="colorDekraYellow">#FFFFCC00</color>
+    <color name="colorDekraOrange">#FFFF6600</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_text">#4a4a4a</color>
+    <color name="gray_text">#9b9b9b</color>
+    <color name="silver">#d3d3d3</color>
+    <color name="gray">#a8a8a8</color>
+    <color name="birupudar">#e5efff</color>
+    <color name="biru">#4689c8</color>
+    <color name="putih">#FFFFFF</color>
+
+    <color name="colorTidakButton">#9b9b9b</color>
+    <color name="tab_background_selected">#01A6FF</color>
+    <color name="tab_background_unselected">#BDBDBD</color>
+    <color name="startColor">#8bcbfc</color>
+    <color name="endColor">#4689c8</color>
+</resources>

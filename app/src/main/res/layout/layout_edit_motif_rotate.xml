@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rotate_tab_page"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource">
+
+    <Button
+        android:id="@+id/left_rotate_button"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_rotate_left_black_24dp"
+        android:text="@string/rotate_left" />
+
+    <Button
+        android:id="@+id/right_rotate_button"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_rotate_right_black_24dp"
+        android:text="@string/rotate_right" />
+
+</LinearLayout>

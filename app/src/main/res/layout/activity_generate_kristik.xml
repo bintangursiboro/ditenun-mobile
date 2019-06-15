@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".function.activity.EditMotifActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putih"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/black_text">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background_press"
+                android:text="@string/save"
+                android:textColor="@color/colorText" />
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background_press"
+                android:text="@string/beranda"
+                android:textColor="@color/colorText" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/motif_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/camera"
+            android:layout_marginTop="@dimen/camera"
+            android:layout_marginRight="@dimen/camera"
+            android:layout_marginBottom="10dp" />
+
+        <com.otaliastudios.zoom.ZoomLayout
+            android:id="@+id/kristik_zoom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal|vertical"
+            app:hasClickableChildren="false"
+            app:horizontalPanEnabled="true"
+            app:verticalPanEnabled="true"
+            app:zoomEnabled="true"
+            app:minZoom="0.7"
+            app:minZoomType="zoom"
+            app:maxZoom="10.0"
+            app:maxZoomType="zoom" >
+
+            <ImageView
+                android:id="@+id/main_kristik_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.otaliastudios.zoom.ZoomLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/button_background_press"
+            android:text="@string/edit"
+            android:textColor="@color/colorText" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="bottom|center"
+        android:background="@color/putih"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/square_size_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/size"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupUkuranKristik"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:id="@+id/radioButtonKecil"
+                    android:text="@string/kecil" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/radioButtonSedang"
+                    android:text="@string/sedang" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/radioButtonBesar"
+                    android:text="@string/besar" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/color_size_label"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/color"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupJumlahWarna"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/radioButton2Warna"
+                    android:text="@string/dua" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:id="@+id/radioButton5Warna"
+                    android:text="@string/lima" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/radioButton50Warna"
+                    android:text="@string/lima_puluh" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/generate_button"
+            android:background="@drawable/button_background_press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:textColor="@color/putih"
+            android:text="Generate" />
+    </LinearLayout>
+</LinearLayout>

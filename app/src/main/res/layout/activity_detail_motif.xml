@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".function.activity.EditMotifActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putih"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/black_text">
+
+            <Button
+                android:id="@+id/export_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background_press"
+                android:text="@string/export"
+                android:textColor="@color/colorText" />
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background_press"
+                android:text="@string/beranda"
+                android:textColor="@color/colorText" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/main_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/action_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/colorPrimaryText"
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@color/putih">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:icon="@drawable/ic_outline_edit_24_px"
+            android:text="@string/edit" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:icon="@drawable/ic_outline_view_agenda_24_px"
+            android:text="@string/view_duplication" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:icon="@drawable/ic_outline_gradient_24_px"
+            android:text="@string/generate_kristik" />
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>

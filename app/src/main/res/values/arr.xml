@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="algorithm_array">
+        <item>Image Quilting</item>
+        <item>Image Wrapping</item>
+        <item>L-System</item>
+        <item>Other Method</item>
+    </string-array>
+</resources>

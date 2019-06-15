@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:background="#ffffff"
+        tools:context=".function.activity.FeedbackActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="PENILAIAN ANDA"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/feedback_welcome_title"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:textFontWeight="500"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/penilaian_welcome_title"/>
+
+            <TextView
+                android:id="@+id/feedback_welcome_desc"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textFontWeight="800"
+                android:textSize="15dp"
+                android:textAlignment="gravity"
+                android:text="@string/penilaian_welcome_deskripsi"/>
+
+            <EditText
+                android:id="@+id/subjekFeedback"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="7dp"
+                android:background="@color/birupudar"
+                android:ems="10"
+                android:hint="Subjek.."
+                android:inputType="text"
+                android:scaleType="fitCenter" />
+
+            <EditText
+                android:id="@+id/deskripsiFeedback"
+                android:layout_width="350dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:padding="7dp"
+                android:background="@color/birupudar"
+                android:ems="10"
+                android:hint="Saran dan pertanyaan.."
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:scaleType="fitCenter" />
+
+            <RatingBar
+                android:id="@+id/rating_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                android:numStars="5"
+                android:stepSize="1.0"/>
+
+            <Button
+                android:id="@+id/sendFb"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="7dp"
+                android:background="@color/biru"
+                android:scaleType="fitCenter"
+                android:ems="10"
+                android:textSize="18dp"
+                android:textColor="@color/putih"
+                android:text="Kirim"/>
+        </LinearLayout>
+
+</ScrollView>

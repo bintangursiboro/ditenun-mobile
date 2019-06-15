@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".function.activity.EditMotifActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putih"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/black_text">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:text="@string/save"
+                android:textColor="@color/colorText" />
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rectangle_shape"
+                android:text="@string/beranda"
+                android:textColor="@color/colorText" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/crop_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cropInitialCropWindowPaddingRatio="0"
+        android:layout_margin="5dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/action_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_edit_motif_crop" />
+        <include layout="@layout/layout_edit_motif_flip" />
+        <include layout="@layout/layout_edit_motif_rotate" />
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/action_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/colorPrimaryText"
+        app:tabBackground="@color/putih"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:icon="@drawable/ic_crop_black_24dp"
+            android:text="@string/crop" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:icon="@drawable/ic_flip_black_24dp"
+            android:text="@string/flip" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:icon="@drawable/ic_rotate_right_black_24dp"
+            android:text="@string/rotate" />
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

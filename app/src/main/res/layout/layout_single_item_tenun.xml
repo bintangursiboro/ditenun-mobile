@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ditenun.appditenun.function.view.SquareCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_for_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/thumbTenun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:background="#66000000"
+        android:padding="5dp"
+        android:textColor="@color/colorText"
+        android:textSize="12sp"
+        tools:text="Motif Name" />
+
+
+</com.ditenun.appditenun.function.view.SquareCardView>
